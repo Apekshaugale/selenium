@@ -17,3 +17,11 @@ time.sleep(2)
 #time.sleep(2)
 driver.find_element("id","login-button").click()
 time.sleep(2)
+
+title="Swag Labs"
+
+swag_title=driver.title
+if swag_title==driver.title:
+    print("The title is correct.")
+else:
+    print("The title is not correct")
