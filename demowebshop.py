@@ -10,3 +10,12 @@ driver.find_element("id","small-searchterms").send_keys("computer")
 time.sleep(2)
 driver.find_element("id","login-button").click()
 time.sleep(2)
+title='Demo Web Shop'
+
+demo_title=driver.title
+
+if demo_title==driver.title:
+    print('The name is correct')
+else:
+    print('The name is notcorrect')
+driver.quit()
